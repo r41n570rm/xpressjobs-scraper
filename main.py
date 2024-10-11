@@ -18,11 +18,14 @@ headers = {
     'Priority': 'u=0',
 }
 
+# Get search term from user
+search_term = input("Enter job search term: ")
+
 # Request parameters
 params = {
     'page': '1',
     'pageSize': '1000',
-    'keyword': 'software',
+    'keyword': search_term,
     'locations': '',
     'sectors': '',
     'jobTypes': '',
