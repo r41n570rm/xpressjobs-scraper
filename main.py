@@ -5,17 +5,7 @@ import pandas as pd
 
 # Request headers
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0',
-    'Accept': 'application/json, text/plain, */*',
-    'Accept-Language': 'en-US,en;q=0.5',
-    # 'Accept-Encoding': 'gzip, deflate, br, zstd',
-    'DNT': '1',
-    'Connection': 'keep-alive',
-    'Referer': 'https://xpress.jobs/jobs?KeyWord=cyber&SeoKeyword=cyber-jobs&page=1&pageSize=100',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'same-origin',
-    'Priority': 'u=0',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'
 }
 
 # Get search term from user
@@ -27,7 +17,7 @@ output_filename = input("Enter output filename (.csv): ")
 # Request parameters
 params = {
     'page': '1',
-    'pageSize': '10',
+    'pageSize': '10000',
     'keyword': job_search_term,
     'locations': '',
     'sectors': '',
